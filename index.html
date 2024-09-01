@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        .navbar-brand {
+            font-size: 2rem; /* Larger font size for the name */
+            font-weight: bold; /* Make the name bold */
+        }
+        .navbar-subtitle {
+            font-size: 1.25rem; /* Slightly smaller font size for the job title */
+            margin-top: -5px; /* Adjust spacing between name and job title */
+            font-weight: normal;
+            display: block;
+        }
+        .v1 {
+            background-color: blue;
+            width: 100%;
+            height: 40px;
+        }
+        .content {
+            margin-top: 0; /* Remove gap between v1 and below content */
+        }
+        .contact-box, .summary-box, .skills-box, .education-box, .internship-box, .projects-box, .accomplishments-box {
+            background-color: orange;
+            color: white;
+            border-radius: 0 10px 10px 0; /* Rounded only the right side */
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px; /* Reduced margin to make boxes smaller */
+            max-width: 250px; /* Set a smaller maximum width for the box */
+            position: relative; /* To position the additional info */
+        }
+        .contact-box .box-icon, .summary-box .box-icon, .skills-box .box-icon, .education-box .box-icon, .internship-box .box-icon, .projects-box .box-icon, .accomplishments-box .box-icon {
+            font-size: 1.5rem; /* Adjust icon size */
+            margin-right: 10px; /* Space between icon and text */
+        }
+        .contact-box h2, .summary-box h2, .skills-box h2, .education-box h2, .internship-box h2, .projects-box h2, .accomplishments-box h2 {
+            margin: 0;
+            font-size: 1.1rem; /* Adjust font size if needed */
+        }
+        .contact-info, .summary-info, .skills-info, .education-info, .internship-info, .projects-info, .accomplishments-info {
+            margin-top: 10px; /* Space above the info */
+        }
+        .contact-info .info-item, .skills-info ul li, .summary-info .info-item, .education-info .info-item, .internship-info .info-item, .projects-info .info-item, .accomplishments-info .info-item {
+            margin-bottom: 5px; /* Space between items */
+            display: flex;
+            align-items: center;
+        }
+        .contact-info .info-item i, .skills-info ul li i, .summary-info .info-item i, .education-info .info-item i, .internship-info .info-item i, .projects-info .info-item i, .accomplishments-info .info-item i {
+            font-size: 1rem; /* Adjust icon size */
+            margin-right: 10px; /* Space between icon and text */
+        }
+        .skills-info ul, .summary-info ul, .education-info ul, .internship-info ul, .projects-info ul, .accomplishments-info ul {
+            list-style: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+        }
+        .left-column {
+            background-color: lightgrey;
+            padding: 10px;
+        }
+        .no-margin-top {
+            margin-top: 0 !important; /* Ensure no margin at the top */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0077b6;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                Shriraj
+                <span class="navbar-subtitle">Software trainee</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Add any additional navigation items here -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Visual Element -->
+    <div class="v1"></div>
+
+    <!-- Content Section -->
+    <div class="container-fluid content">
+        <div class="row">
+            <!-- Contact Box with Icon and Text -->
+            <div class="col-md-4 left-column">
+                <div class="contact-box">
+                    <i class="fas fa-phone-alt box-icon"></i>
+                    <h2>Contact</h2>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>Phone:</p>
+                        <p>90087777</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>Email:</p>
+                        <p>email@example.com</p> <!-- Example email -->
+                    </div>
+                </div>
+                <div class="summary-box no-margin-top">
+                    <i class="fas fa-user box-icon"></i>
+                    <h2>Summary</h2>
+                </div>
+                <div class="summary-info">
+                    <p> graduated in ISE and interested in web development.</p>
+                </div>
+            </div>
+            <!-- Skills, Education, Internship, Projects, and Other Accomplishments Boxes -->
+            <div class="col-md-8">
+                <div class="skills-box no-margin-top">
+                    <i class="fas fa-star box-icon"></i>
+                    <h2>Skills</h2>
+                </div>
+                <div class="skills-info">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Java</li>
+                        <li><i class="fas fa-check"></i> HTML/CSS</li>
+                        <li><i class="fas fa-check"></i> JavaScript</li>
+                        <li><i class="fas fa-check"></i> Git</li>
+                        <!-- Add more skills as needed -->
+                    </ul>
+                </div>
+                <div class="education-box no-margin-top">
+                    <i class="fas fa-graduation-cap box-icon"></i>
+                    <h2>Education</h2>
+                </div>
+                <div class="education-info">
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <p>PUC in Computer Science<br>
+                        Bachelor's Degree in Computer Science</p> <!-- Example education -->
+                    </div>
+                </div>
+                <div class="internship-box no-margin-top">
+                    <i class="fas fa-briefcase box-icon"></i>
+                    <h2>Internship</h2>
+                </div>
+                <div class="internship-info">
+                    <div class="info-item">
+                        <i class="fas fa-briefcase"></i>
+                        <p>Interned at Zephyr Technologies<br>
+                         learnt web development during this internship.</p> <!-- Updated internship info -->
+                    </div>
+                </div>
+                <div class="projects-box no-margin-top">
+                    <i class="fas fa-project-diagram box-icon"></i>
+                    <h2>Portfolio</h2>
+                </div>
+                <div class="projects-info">
+                    <div class="info-item">
+                        <i class="fas fa-project-diagram"></i>
+                        <p>College website: College Website that gives 
+                            information about courses and facilities 
+                            provided by college and Also It contains 
+                            comment section where user can specify 
+                            any suggestions</p> <!-- Updated project info -->
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-project-diagram"></i>
+                        <p>FootBall league website
+                            :website provides schedules of each match and points
+                            table and also it shows each teams description like players 
+                            name and their bio and achievements and it also has brief 
+                            information about origin of football league .For this 
+                            technologies used are html ,css,js</p> <!-- Updated project info -->
+                    </div>
+                </div>
+                <div class="accomplishments-box no-margin-top">
+                    <i class="fas fa-trophy box-icon"></i>
+                    <h2>Other Accomplishments</h2>
+                </div>
+                <div class="accomplishments-info">
+                    <div class="info-item">
+                        <i class="fas fa-trophy"></i>
+                        <p>Accomplishment A: Description</p> <!-- Example accomplishment -->
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-trophy"></i>
+                        <p>Accomplishment B: Description</p> <!-- Example accomplishment -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min
